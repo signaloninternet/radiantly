@@ -1,0 +1,115 @@
+.app {
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px;
+  background-color: #141414;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.movie-container {
+  padding: 20px;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 movies per row */
+  gap: 20px;
+}
+
+.movie-card {
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+}
+
+/* Dynamic card colors */
+.movie-card-0 {
+  background-color: #ff6f61;
+}
+
+.movie-card-1 {
+  background-color: #6fa8dc;
+}
+
+.movie-card-2 {
+  background-color: #93c47d;
+}
+
+.movie-card-3 {
+  background-color: #ffd966;
+}
+
+.movie-card-4 {
+  background-color: #cc99ff;
+}
+
+.movie-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.movie-overlay {
+  margin-top: 10px;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.movie-description {
+  font-size: 1rem;
+  color: #e3e3e3;
+}
+
+.movie-link {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #141414;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+  background-color: #333;
+}
+
+.pagination-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
